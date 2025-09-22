@@ -8,22 +8,81 @@
 </head>
 <body>
     <header>
-        <h1>FENIKS EOOD</h1>
+        <h1>ФениксВК49ЕООД</h1>
         <p class="tagline">Качествени поликарбонатни плоскости за всяка нужда</p>
         <nav>
             <a href="index.html">Начало</a>
             <a href="products.html">Продукти</a>
             <a href="about.html">За нас</a>
-            <!-- <a href="contact.html">Контакт</a> -->
+            <a href="contact.html">Контакт</a>
         </nav>
     </header>
     <main>
         <section>
             <h2>Контакт</h2>
             <p>Свържете се с нас за повече информация за нашите продукти и услуги.</p>
-            <p>Email: <a href="mailto:alexander.kamenov432@gmail.com">alexander.kamenov432@gmail.com</a></p>
-            <p>Телефон: +359 88 853 4629</p>
-            <p>Работно време: Понеделник - Петък, 9:00 - 17:00</p>
+        </section>
+
+        <section class="contact-info">
+            <h3>Информация за контакт</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:alexander.kamenov432@gmail.com">alexander.kamenov432@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Телефон:</strong> +359 88 853 4629
+                </div>
+                <div class="contact-item">
+                    <strong>Работно време:</strong> Понеделник - Петък, 9:00 - 17:00
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h3>Изпратете ни съобщение</h3>
+            <form action="https://formspree.io/f/xwprerpj" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Име *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Фирма</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-interest">Интерес към продукт</label>
+                    <select id="product-interest" name="product-interest">
+                        <option value="">Изберете продукт</option>
+                        <option value="polycarbonate">Поликарбонатни плоскости</option>
+                        <option value="pvc">PVC плоскости</option>
+                        <option value="custom">Специална поръчка</option>
+                        <option value="other">Друго</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Съобщение *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Опишете вашите нужди, размери, количество и др."></textarea>
+                </div>
+                
+                <!-- Hidden field for spam protection -->
+                <input type="hidden" name="_subject" value="Ново запитване от уебсайта - FENIKS EOOD">
+                <input type="hidden" name="_next" value="https://fenikseood.me/thank-you.html">
+                
+                <button type="submit" class="submit-btn">Изпрати съобщение</button>
+            </form>
         </section>
     </main>
     <footer>

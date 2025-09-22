@@ -14,20 +14,20 @@
 </head>
 <body>
     <header>
-        <h1>FENIKS EOOD</h1>
+        <h1>ФениксВК49ЕООД</h1>
         <p class="tagline">Качествени поликарбонатни плоскости за всяка нужда</p>
         <nav>
             <a href="index.html">Начало</a>
             <a href="products.html">Продукти</a>
             <a href="about.html">За нас</a>
-            <!-- <a href="contact.html">Контакт</a> -->
+            <a href="contact.html">Контакт</a>
         </nav>
     </header>
     <main>
         <section class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2>Добре дошли в FENIKS EOOD</h2>
+                    <h2>Добре дошли при нас</h2>
                     <p>Вашият надежден партньор за висококачествени поликарбонатни и пластмасови плоскости в България.</p>
                     <p>Предлагаме широка гама от продукти за строителство, промишленост и търговия.</p>
 
@@ -37,6 +37,34 @@
                     <p>Email: <a href="mailto:alexander.kamenov432@gmail.com">alexander.kamenov432@gmail.com</a></p>
                     <p>Телефон: +359 88 853 4629</p>
                     <p>Работно време: Понеделник - Петък, 9:00 - 17:00</p>
+
+                    <!-- Quick Contact Form -->
+                    <div class="quick-contact">
+                        <h3>Бърза заявка</h3>
+                        <p>Получете оферта в рамките на 24 часа</p>
+                        <form action="https://formspree.io/f/xwprerpj" method="POST" class="quick-form">
+                            <div class="quick-form-row">
+                                <input type="text" name="name" placeholder="Вашето име *" required>
+                                <input type="email" name="email" placeholder="Email *" required>
+                            </div>
+                            <div class="quick-form-row">
+                                <input type="tel" name="phone" placeholder="Телефон">
+                                <select name="product-interest">
+                                    <option value="">Интерес към продукт</option>
+                                    <option value="polycarbonate">Поликарбонат</option>
+                                    <option value="pvc">PVC</option>
+                                    <option value="quote">Оферта</option>
+                                </select>
+                            </div>
+                            <textarea name="message" placeholder="Опишете накратко вашите нужди..." rows="3" required></textarea>
+                            
+                            <!-- Hidden fields -->
+                            <input type="hidden" name="_subject" value="Бърза заявка от началната страница - FENIKS EOOD">
+                            <input type="hidden" name="_next" value="https://fenikseood.me/thank-you.html">
+                            
+                            <button type="submit" class="quick-submit-btn">Изпрати заявка</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="hero-image">
                     <img src="images/IMG_3371.jpg" alt="FENIKS EOOD поликарбонатни плоскости">
