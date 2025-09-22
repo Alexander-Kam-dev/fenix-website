@@ -114,3 +114,122 @@ footer {
         order: 2;
     }
 }
+
+/* Products page styling */
+.product-category {
+    margin-bottom: 3rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 2rem;
+}
+
+.product-category h3 {
+    color: #0078d7;
+    border-bottom: 2px solid #e6f0fa;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-intro {
+    margin-bottom: 2rem;
+}
+
+.category-intro p {
+    font-style: italic;
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 200px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.product-image::before {
+    content: "📷";
+    font-size: 3rem;
+    color: #ccc;
+    position: absolute;
+}
+
+.product-info {
+    padding: 1rem;
+}
+
+.product-info h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.product-info p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.custom-orders {
+    background: linear-gradient(135deg, #e6f0fa 0%, #f8f9fa 100%);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.custom-orders h3 {
+    color: #0078d7;
+    margin-bottom: 1rem;
+}
+
+.custom-content ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.custom-content li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.custom-content strong {
+    color: #0078d7;
+}
+
+/* Mobile adjustments for products */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-category {
+        padding: 1.5rem;
+    }
+}
